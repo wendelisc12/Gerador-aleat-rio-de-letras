@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #e1e1e6;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-box{
+    background-color: #121214;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#principal-box{
+    background-color: #202024;
+    box-shadow: 0 5px 0 #18181b;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: height 400ms;
+}
+
+.hide{
+    opacity: 0;
+    max-height: 0;
+    pointer-events: none;
+}
+
+#letra-box{
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    transition: all 300ms;
+}
+
+#letras-hide{
+    transition: all 600ms;
+}
+
+#retangleLetra{
+   border: 5px solid #8257e5;
+   border-radius: 15px;
+   transform: rotate(135deg);
+   width: 120px;
+   height: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#letraR{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-135deg);
+}
+
+#botaoLetra{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid rgb(101, 247, 72);
+    background-color: transparent;
+    transition: 400ms all;
+    outline: none;
+}
+
+#botaoLetra:hover{
+    background-color: rgb(101, 247, 72);
+}
